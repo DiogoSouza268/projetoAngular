@@ -1,0 +1,32 @@
+<div id="overlay" onclick="mudarMenu()"></div>
+
+<header>
+  
+  <app-menu></app-menu>
+
+</header>
+
+<main>
+  <div id="informe">
+    <p id="te1">Sistema de dados FORD</p>
+
+    <p id="te2">Seja bem vindo(a)</p>
+  </div>
+</main>
+
+<script>
+  function mudarMenu() {
+    const menu = document.getElementById('menu_lateral');
+    const overlay = document.getElementById('overlay');
+    const botao = document.getElementById('butao');
+
+    if (menu.style.display === 'block') {
+      menu.style.display = 'none';
+      overlay.style.display = 'none';
+      botao.style.left = '10px';
+    } else {
+      menu.style.display = 'block';
+      overlay.style.display = 'block';
+    }
+  }
+</script>
