@@ -86,23 +86,33 @@ main{
   justify-content: center;
 }
 
-
-#tabela{
+#tabela {
   display: flex;
   background-color: brown;
+  width: 100%;
 }
 
-table{
+table {
   background-color: blue;
   width: 100%;
-  padding-bottom: 10px;
+  border-collapse: collapse; 
 }
 
-thead > th{
+thead th {
   color: white;
   border: 1px solid black;
-  padding-top: 20px;
+  text-align: center;      
+  vertical-align: middle;  
+  padding: 15px 10px;      
 }
-tbody{
+
+tbody {
   background-color: beige;
+}
+
+tbody td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+  border: 1px solid black;
 }
