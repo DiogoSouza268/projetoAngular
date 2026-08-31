@@ -12,21 +12,25 @@ header {
 }
 
 main{
-  background-color: aqua;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   flex: 1;
 }
 
+#sec1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #dashboard{
-  background-color: blueviolet;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
 }
 
 .bloco{
-  background-color: brown;
   width: 15%;
   border: 1px solid black;
   display: flex;
@@ -34,7 +38,7 @@ main{
 }
 
 .blocoUp{
-  background-color: gray;
+  background-color: rgb(199, 199, 199);
   display: flex;
   align-items: center;
   height: 40%;
@@ -47,7 +51,6 @@ main{
 #blocoDown{
   display: flex;
   height: 60%;
-  background-color: burlywood;
   justify-content: center;
   align-items: center;
 }
@@ -60,12 +63,10 @@ main{
 .blocoDown2{
   display: flex;
   height: 60%;
-  background-color: rgb(123, 24, 24);
 }
 
 .blocoDown2text{
   margin-left: 25px;
-  background-color: aqua;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,4 +79,30 @@ main{
 
 .blocoDown2text > p{
   margin: 0;
+}
+
+#imagem{
+  display: flex;
+  justify-content: center;
+}
+
+
+#tabela{
+  display: flex;
+  background-color: brown;
+}
+
+table{
+  background-color: blue;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+thead > th{
+  color: white;
+  border: 1px solid black;
+  padding-top: 20px;
+}
+tbody{
+  background-color: beige;
 }
