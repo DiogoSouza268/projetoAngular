@@ -14,7 +14,7 @@ header {
 main {
   display: flex;
   gap: 40px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: column;
   flex: 1;
 }
@@ -32,19 +32,23 @@ main {
 #dashboard {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 20px;
   width: 100%;
-  gap: 15px;
 }
 
 .bloco {
   display: flex;
   flex-direction: column;
-  width: 100%;
   border: 1px solid black;
+  width: 80%;
+  height: 160px;
+  border-radius: 20px;
 }
 
 .blocoUp {
   background-color: rgb(221, 221, 221);
+  border-radius: 20px 20px 0px 0px;
 }
 
 .blocoUp > p {
@@ -80,12 +84,12 @@ main {
 
 #imagem > img {
   width: 90%;
+  max-width: 1000px;
 }
 
 #tabela {
   width: 100%;
   max-width: 1000px;
-  margin: 15px auto;
 }
 
 #tabela thead {
@@ -106,7 +110,7 @@ main {
   border: 1px solid #000;
   border-radius: 8px;
   padding: 12px;
-  margin-bottom: 12px;
+  margin: 12px;
   background-color: #fff;
 }
 
@@ -136,30 +140,26 @@ main {
   box-sizing: border-box;
 }
 
-/* =========================================================
-   REGRAS DE DESKTOP (A partir de 768px)
-   ========================================================= */
 @media (min-width: 768px) {
 
-  /* 1. Coloca os cards do Dashboard lado a lado */
   #dashboard {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
-  .bloco {
-    flex: 1; /* Faz todos os cards terem a mesma largura */
+  .bloco{
+    width: 20%;
+
   }
 
-  /* 2. Ajusta a seção da Tabela para ocupar a largura total do container */
   #tabela {
-    max-width: 100%; /* Remove o limite de 1000px se quiser esticar na tela inteira */
-    margin: 20px 0;   /* Remove o alinhamento 'auto' das laterais */
+    max-width: 100%; 
+    margin: 20px 0;  
   }
 
   #tabela table {
     display: table;
-    width: 100%; /* Garante que a tabela estique de ponta a ponta */
+    width: 100%; 
     border-collapse: collapse;
   }
 
