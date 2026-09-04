@@ -73,7 +73,7 @@ main {
 }
 
 .blocoDown2text > h2 {
-  color: aqua;
+  color: #003478;
 }
 
 #imagem {
@@ -165,7 +165,7 @@ main {
 
   #tabela thead {
     display: table-header-group;
-    background-color: rgb(80, 80, 248);
+    background-color: #003478;
     color: white;
   }
 
