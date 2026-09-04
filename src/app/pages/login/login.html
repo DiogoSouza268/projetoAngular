@@ -6,18 +6,18 @@
   <section id="formulario">
     <img src="img/ford.png" alt="ford logo" />
 
-    <form>
+    <form #loginForm="ngForm" (ngSubmit)="login()">
       <p>Boas-Vindas</p>
 
       <div id="dados">
         <div class="inputs">
           &#x1F464;
-          <input type="text" name="email" placeholder="Insira seu email" class="user_dados" />
+          <input type="text" [(ngModel)]="usuario.nome" name="email" placeholder="Insira seu email" class="user_dados" />
         </div>
 
         <div class="inputs">
           &#x1F512;
-          <input type="text" name="senha" placeholder="Insira sua senha" class="user_dados" />
+          <input type="text" [(ngModel)]="usuario.senha" name="senha" placeholder="Insira sua senha" class="user_dados" />
         </div>
       </div>
 
@@ -26,7 +26,7 @@
         <input type="checkbox" name="" id="checado" />
       </div>
 
-      <button>Entrar</button>
+      <button type="submit">Entrar</button>
     </form>
   </section>
 </main>
